@@ -53,9 +53,8 @@ Here's the one for debugging the client:
     "program": "${workspaceFolder}/Client/bin/Debug/netcoreapp2.1/Client.dll",
     "args": [],
     "cwd": "${workspaceFolder}/Client",
-    "console": "internalConsole",
-    "stopAtEntry": false,
-    "internalConsoleOptions": "openOnSessionStart"
+    "console": "externalTerminal",
+    "stopAtEntry": false
 }
 ```
 
@@ -70,9 +69,8 @@ Here's the one of debugging the server:
     "program": "${workspaceFolder}/Server/bin/Debug/netcoreapp2.1/Server.dll",
     "args": [],
     "cwd": "${workspaceFolder}/Server",
-    "console": "internalConsole",
-    "stopAtEntry": false,
-    "internalConsoleOptions": "openOnSessionStart"
+    "console": "externalTerminal",
+    "stopAtEntry": false
 }
 ```
 
