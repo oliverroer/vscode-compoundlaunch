@@ -36,7 +36,7 @@ You should be able to see how the debugger seamlessly jumps back and forth betwe
 
 ## How did you configure this?
 
-Quite easily, actually. They've added a feature to VS Code called [compound launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_multitarget-debugging) which allows you to compose multiple launch configurations into a new launch configuration, which will run all declared configurations simultaneously.
+Quite easily, actually. They've added a feature to VS Code called [compound launch configurations](https://code.visualstudio.com/Docs/editor/debugging#_compound-launch-configurations) which allows you to compose multiple launch configurations into a new launch configuration, which will run all declared configurations simultaneously.
 
 This is all configured in the `.vscode/launch.json` file.
 
