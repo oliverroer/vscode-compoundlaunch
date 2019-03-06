@@ -50,11 +50,9 @@ Here's the one for debugging the client:
     "type": "coreclr",
     "request": "launch",
     "preLaunchTask": "build",
-    // If you have changed target frameworks, make sure to update the program path.
     "program": "${workspaceFolder}/Client/bin/Debug/netcoreapp2.1/Client.dll",
     "args": [],
     "cwd": "${workspaceFolder}/Client",
-    // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
     "console": "internalConsole",
     "stopAtEntry": false,
     "internalConsoleOptions": "openOnSessionStart"
@@ -69,11 +67,9 @@ Here's the one of debugging the server:
     "type": "coreclr",
     "request": "launch",
     "preLaunchTask": "build",
-    // If you have changed target frameworks, make sure to update the program path.
     "program": "${workspaceFolder}/Server/bin/Debug/netcoreapp2.1/Server.dll",
     "args": [],
     "cwd": "${workspaceFolder}/Server",
-    // For more information about the 'console' field, see https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md#console-terminal-window
     "console": "internalConsole",
     "stopAtEntry": false,
     "internalConsoleOptions": "openOnSessionStart"
