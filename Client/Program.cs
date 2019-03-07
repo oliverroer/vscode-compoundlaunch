@@ -20,9 +20,14 @@ namespace Client
 
             for (int i = 0; i < 10; i++)
             {
-                HttpResponseMessage response = await http.GetAsync(path);
-                string content = await response.Content.ReadAsStringAsync();
-                Console.WriteLine($"received '{content}' from '{baseAddress}{path}'");
+                try {
+                    HttpResponseMessage response = await http.GetAsync(path);
+                    string content = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine($"received '{content}' from '{baseAddress}{path}'");
+                } catch (Exception exception) {
+                    Console.WriteLine("Caught exception:");
+                    Console.WriteLine(exception.StackTrace);
+                }
             }
         }
     }
