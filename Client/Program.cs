@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Client
@@ -20,6 +21,7 @@ namespace Client
 
             for (int i = 0; i < 10; i++)
             {
+                Thread.Sleep(1000);
                 try {
                     HttpResponseMessage response = await http.GetAsync(path);
                     string content = await response.Content.ReadAsStringAsync();
